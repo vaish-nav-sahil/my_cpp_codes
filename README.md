@@ -1,3 +1,3 @@
 # my_cpp_codes
 my first cpp codes.
-<br>UTHOR - SAHIL SANTOSH VAISH
+<br>AUTHOR - SAHIL SANTOSH VAISH
