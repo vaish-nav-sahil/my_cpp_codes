@@ -1,6 +1,6 @@
 // 506. Relative Ranks 
 // link -> https://leetcode.com/problems/relative-ranks/description/
-
+//basic approach
 // t.c -> O(n^2)
 // s.c -> O(n)
 
@@ -60,3 +60,37 @@ int main(){
     cout<<endl;
     return 0;
 }
+
+//second approach using unordered map or hash map
+
+//t.c -> O(n)
+//s.c -> O(n)
+// class Solution {
+// public:
+//     vector<string> findRelativeRanks(vector<int>& score) {
+//         int n = score.size();
+
+//         vector<int>sorted=score;
+//         sort(sorted.begin(),sorted.end(),greater<int>());
+
+//         vector<string>ans;
+//         unordered_map<int,int>mpp;
+
+//         for(int i= 0 ;i<n;i++){
+//             mpp[sorted[i]]=i+1;
+//         }
+
+//         for(int i=0;i<n;++i){
+//             int current_rank = mpp[score[i]];
+//             if (current_rank == 1) ans.push_back("Gold Medal");
+//             else if (current_rank == 2) ans.push_back("Silver Medal");
+//             else if (current_rank == 3) ans.push_back("Bronze Medal");
+//             else{
+//                 string s = to_string(current_rank);
+//                 ans.push_back(s);
+//             }
+
+//         }
+//         return ans;
+//     }
+// };
