@@ -1,3 +1,7 @@
+//3689. Maximum Total Subarray Value I
+
+// link -> https://leetcode.com/problems/maximum-total-subarray-value-i/description/?envType=daily-question&envId=2026-06-09
+
 // t.c -> O(n);
 // s.c -> O(1);
 
