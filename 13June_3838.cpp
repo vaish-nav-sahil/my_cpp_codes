@@ -1,7 +1,12 @@
 // 3838. Weighted Word Mapping
 // link -> https://leetcode.com/problems/weighted-word-mapping/description/?envType=daily-question&envId=2026-06-13
+
 // t.c -> O(n*each_word_length)
 // s.c -> O(1)
+
+
+#include<bits/stdc++.h>
+using namespace std ;
 
 class Solution {
 public:
@@ -19,6 +24,25 @@ public:
             int rev_map_index = 122-after_mod;     //reverse mapping
             
             ans= ans + (char)rev_map_index;        //explicit type conversion into char 
+        }
         return ans;
     }
 };
+
+
+
+int main(){
+
+    int n,m;
+    cin>>n>>m;
+
+    vector<string>words;
+    for(int i=0;i<n;++i) cin>>words[i];
+
+    vector<int>weights;
+    for(int i=0;i<m;++i) cin>>weights[i];
+
+    Solution obj;
+    string ans = obj.mapWordWeights(words,weights);
+    return 0;
+}
