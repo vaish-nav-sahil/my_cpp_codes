@@ -37,7 +37,7 @@ public:
         }
         
         
-        for(int i = 1 ;i <s.size();++i){
+        for(int i = 0 ;i <s.size();++i){
             char ch = s[i];
             int index = ch - 'a';
             if (taken[index] == true)  continue;
